@@ -1,3 +1,4 @@
+//Initializing a constant
 const Mountains=[
     {name: "Kilimanjaro", height: 5895, place: "Tanzania"},
     {name: "Everest", height: 8848, place: "Nepal"},
@@ -7,10 +8,12 @@ const Mountains=[
     {name: "Popocatepetl", height: 5465, place: "Mexico"},
     {name: "Mont Blanc", height: 4808, place: "Italy/France"}
 ];
+//generating the table within a div
 let div=document.getElementById("mountains");
 let t=document.createElement("table");
 let d=div.appendChild(t);
 console.log(d);
+//generating the header of the table
 let t1=document.createElement("tr");
 let d1=d.appendChild(t1);
 let t1a=document.createElement("th");
@@ -25,6 +28,7 @@ let t1c=document.createElement("th");
 let d1c=d1.appendChild(t1c);
 let head2=document.createTextNode("Place");
 d1c.appendChild(head2);
+//Generating the content of the table
 for(let i=0; i<Mountains.length; i++){
     let t2=document.createElement("tr");
     let d2=d.appendChild(t2);
@@ -42,6 +46,7 @@ for(let i=0; i<Mountains.length; i++){
     let head5=document.createTextNode(`${Mountains[i].place}`);
     d2c.appendChild(head5);
 }
+//Aligning the height to the right.
 let align=document.getElementsByClassName("numbers");
 for(let el of align){
     el.style.textAlign="right";
