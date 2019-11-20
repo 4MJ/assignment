@@ -39,10 +39,10 @@ function changeSize(el, amount, direction) {
 		console.log(elSize);
 		elSize = Math.ceil(elSizeValue) + 'px';
 		el.style.fontSize = elSize;
-	} else boom(el);
+	} else bomb(el);
 }
 
-function boom(el) {
+function bomb(el) {
 	el.firstChild.nodeValue = '💥';
 	document.removeEventListener('keydown', balloon, true);
 }
