@@ -1,0 +1,35 @@
+.logo-img{
+    width: 150px;
+    height: 150px;
+}
+.small-img{
+    width: 50px;
+    height: 40px;
+}
+@media(max-width:320px){
+    .logo-img{
+        width: 250px;
+        height: 250px;
+        margin-left: 10px;
+    }
+    .small-img{
+        width: 40px;
+        height: 30px;
+        margin-top: 15px;
+    }
+    .m-text{
+        font-size: 44px;
+        margin-top: 10px;
+    }
+    .center{
+        text-align: center;
+    }
+    .s-card{
+        font-size: 18px;
+        text-align: center;
+    }
+    .s-text{
+        font-size: 13px;
+        margin-left:4px ;
+    }
+}
